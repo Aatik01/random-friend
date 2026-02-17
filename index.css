@@ -1,37 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f4f4f4;
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb')
+                no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.container {
-    margin: 50px auto;
-    width: 300px;
-}
-
+/* Transparent Glass Card */
 .card {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 380px;
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: center;
+    color: rgb(19, 18, 18);
+
+    background: rgba(255, 255, 255, 0.08);  /* transparent */
+    backdrop-filter: blur(20px);           /* glass blur */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
-img {
-    width: 100px;
-    height: 100px;
+h1 {
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.profile img {
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
-    margin-bottom: 10px;
+    border: 3px solid rgba(255,255,255,0.6);
+    margin-bottom: 15px;
+}
+
+.profile h2 {
+    margin-bottom: 5px;
+}
+
+.profile p {
+    font-size: 14px;
+    opacity: 0.8;
+    margin-bottom: 25px;
 }
 
 button {
-    background-color: #007bff;
-    color: white;
+    padding: 10px 25px;
+    border-radius: 25px;
     border: none;
-    padding: 10px;
-    border-radius: 5px;
     cursor: pointer;
+    font-weight: 500;
+    background: rgba(255,255,255,0.9);
+    color: black;
+    transition: 0.3s;
 }
 
 button:hover {
-    background-color: #0056b3;
+    transform: scale(1.05);
 }
